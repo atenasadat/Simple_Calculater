@@ -8,20 +8,17 @@ def add(a , b):
     """
     return a+b
 
-
 def sub(a , b):
     """
     This function gets two numbers and returns a - b
     """
     return a-b
 
-
 def mul(a , b):
     """
     This function gets two numbers and returns their Multiplication
     """
     return a*b
-
 
 def dev(a , b):
     """
@@ -32,15 +29,11 @@ def dev(a , b):
     else:
         print("Divide by zero!")
 
-
-
 def sin(a):
     """
     This function gets a numbers and returns it's sin
     """
     return math.sin(a)
-
-
 
 def cos(a):
     """
@@ -48,15 +41,11 @@ def cos(a):
     """
     return math.cos(a)
 
-
-
 def exp(a):
     """
     This function gets a numbers and returns it's exponential
     """
     return math.exp(a)
-
-
 
 def log(a , b):
     """
