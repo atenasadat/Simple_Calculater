@@ -22,7 +22,7 @@ def mul(a, b):
     return a * b
 
 
-def dev(a, b):
+def divide(a, b):
     """
     This function gets two numbers and returns their division
     """
