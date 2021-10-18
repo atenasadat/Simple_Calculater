@@ -1,33 +1,36 @@
+import math
 
-import  math
 
-
-def add(a , b):
+def add(a, b):
     """
     This function gets two numbers and returns a+b
     """
-    return a+b
+    return a + b
 
-def sub(a , b):
+
+def sub(a, b):
     """
     This function gets two numbers and returns a - b
     """
-    return a-b
+    return a - b
 
-def mul(a , b):
+
+def mul(a, b):
     """
     This function gets two numbers and returns their Multiplication
     """
-    return a*b
+    return a * b
 
-def dev(a , b):
+
+def dev(a, b):
     """
     This function gets two numbers and returns their division
     """
     if b != 0:
-        return a/b
+        return a / b
     else:
         print("Divide by zero!")
+
 
 def sin(a):
     """
@@ -35,11 +38,13 @@ def sin(a):
     """
     return math.sin(a)
 
+
 def cos(a):
     """
     This function gets a numbers and returns it's cos
     """
     return math.cos(a)
+
 
 def exp(a):
     """
@@ -47,8 +52,22 @@ def exp(a):
     """
     return math.exp(a)
 
-def log(a , b):
+
+def log(a, b):
     """
     This function gets a and returns it's log in the basis of b
     """
-    return math.log(a,b)
+    return math.log(a, b)
+
+
+def factorial(a):
+    """
+        This function gets a and returns a!
+    """
+    if a == 0 or a == 1:
+        return 1
+    if a > 1:
+        return factorial(a - 1)
+    print("The number must be non-negative!")
+
+
