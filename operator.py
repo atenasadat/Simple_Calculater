@@ -70,4 +70,8 @@ def factorial(a):
         return factorial(a - 1)
     print("The number must be non-negative!")
 
-
+def radical(a):
+    '''
+        This function gets a and returns √a
+    '''
+    return a**2
