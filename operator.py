@@ -50,3 +50,16 @@ def cos(a):
 
 
 
+def exp(a):
+    """
+    This function gets a numbers and returns it's exponential
+    """
+    return math.exp(a)
+
+
+
+def log(a , b):
+    """
+    This function gets a and returns it's log in the basis of b
+    """
+    return math.log(a,b)
