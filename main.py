@@ -4,11 +4,37 @@ import operators_fun as of
 
 def two_operand_operations(a, operators, opr):
     b = float(input('Please enter b number\n'))
-    print('---------------','\n',of.add(a, b))
+    print('---------------')
+    for c in operators:
+        if operators[c] == opr:
+            if opr == '+':
+                print(of.add(a, b))
+            elif opr == '-':
+                print(of.sub(a, b))
+            elif opr == '*':
+                print(of.mul(a, b))
+            elif opr == '/':
+                print(of.divide(a, b))
+            elif opr == 'l':
+                print(of.log(a, b))
+            break
 
 
 def one_operand_operations(a, operators, opr):
-    pass
+    print('---------------')
+    for c in operators:
+        if operators[c] == opr:
+            if opr == 's':
+                print(of.sin(a))
+            elif opr == 'c':
+                print(of.cos(a))
+            elif opr == 'e':
+                print(of.exp(a))
+            elif opr == '!':
+                print(of.factorial(a))
+            elif opr == 'r':
+                print(of.radical(a))
+            break
 
 
 def ui(a):
@@ -24,11 +50,22 @@ def ui(a):
                         'factorial': '!',
                         'radical': 'r'
                         }
-    print('Please enter the operator. Use the list below:')
-    print('add : +')
-    opr = input()
-    two_operand_operations(a, command_2operand, opr)
 
+    while True:
+        print('Please enter the operator. Use the list below:')
+        for c2 in command_2operand:
+            print(c2, ' : ', command_2operand[c2])
+        for c1 in command_1operand:
+            print(c1, ' : ', command_1operand[c1])
+        opr = input()
+        if opr in command_2operand.values():
+            two_operand_operations(a, command_2operand, opr)
+            break
+        elif opr in command_1operand.values():
+            one_operand_operations(a, command_1operand, opr)
+            break
+        else:
+            print("NO VALID INPUT!")
 
 
 while True:
