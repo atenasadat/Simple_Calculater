@@ -1,4 +1,6 @@
 
+import  math
+
 
 def add(a , b):
     """
@@ -29,3 +31,22 @@ def dev(a , b):
         return a/b
     else:
         print("Divide by zero!")
+
+
+
+def sin(a):
+    """
+    This function gets a numbers and returns it's sin
+    """
+    return math.sin(a)
+
+
+
+def cos(a):
+    """
+    This function gets a numbers and returns it's cos
+    """
+    return math.cos(a)
+
+
+
