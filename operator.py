@@ -16,8 +16,16 @@ def sub(a , b):
 
 def mul(a , b):
     """
-    This function gets two numbers and returns their Multipication
+    This function gets two numbers and returns their Multiplication
     """
     return a*b
 
 
+def dev(a , b):
+    """
+    This function gets two numbers and returns their division
+    """
+    if b != 0:
+        return a/b
+    else:
+        print("Divide by zero!")
