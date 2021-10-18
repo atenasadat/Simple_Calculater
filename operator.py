@@ -74,4 +74,4 @@ def radical(a):
     '''
         This function gets a and returns √a
     '''
-    return a**2
+    return a
