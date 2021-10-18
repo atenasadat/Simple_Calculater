@@ -71,3 +71,10 @@ def factorial(a):
     print("The number must be non-negative!")
 
 
+
+def radical(a):
+    if a < 0:
+        print("The number must be non-negative!")
+    else:
+        return math.sqrt(a)
+
